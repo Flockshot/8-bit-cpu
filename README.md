@@ -31,12 +31,12 @@ The CPU is designed modularly, with each component built as a separate Logisim s
 A combinational logic circuit that decodes the instruction `opcode` and (for branches) the `EQ` flag from the ALU. It generates all necessary control signals for the datapath.
 
 * **Output Signals:**
-    * `mux1`: Selects the value to be written back to the register file (ALU result or memory data).
-    * `mux2`: Selects the second operand for the ALU (Register data or immediate value).
-    * `WE` (Write Enable): Enables writing to the Register File.
-    * `write` / `read`: Control signals for Data Memory.
-    * `ALUfunc`: A 3-bit signal that tells the ALU which operation to perform.
-    * `PCmux` & `Branch`: Signals to control PC updates for branches or jumps.
+    * `mux1`: Selects the value to be written back to the register file (ALU result or memory data).
+    * `mux2`: Selects the second operand for the ALU (Register data or immediate value).
+    * `WE` (Write Enable): Enables writing to the Register File.
+    * `write` / `read`: Control signals for Data Memory.
+    * `ALUfunc`: A 3-bit signal that tells the ALU which operation to perform.
+    * `PCmux` & `Branch`: Signals to control PC updates for branches or jumps.
 
 ![Image: Screenshot of the Control Unit sub-circuit logic](.media/Control_Unit.png)
 
@@ -57,11 +57,11 @@ The 8-bit computational core of the CPU.
 ### 4. Memory
 
 * **Instruction Memory (ROM):** A 1K x 21-bit Read-Only Memory.
-    * It is 10-bit addressable (1024 instructions).
-    * Stores the 21-bit wide instructions for the program.
+    * It is 10-bit addressable (1024 instructions).
+    * Stores the 21-bit wide instructions for the program.
 * **Data Memory (RAM):** A 256 x 8-bit Random-Access Memory.
-    * It is 8-bit addressable (256 bytes).
-    * Used by `LOAD` and `STORE` instructions to read from and write to memory.
+    * It is 8-bit addressable (256 bytes).
+    * Used by `LOAD` and `STORE` instructions to read from and write to memory.
 
 ### 5. Program Counter (PC)
 
@@ -98,8 +98,8 @@ The CPU implements a custom 21-bit ISA with R-type, I-type, and J-type formats. 
 1.  **Software:** This project requires [Logisim](http://www.cburch.com/logisim/) or a fork like [Logisim-evolution](https://github.com/logisim-evolution/logisim-evolution) to open.
 2.  **Open:** Clone the repository and open the `8_bit_cpu.circ` file.
 3.  **Load Program:** The Instruction Memory (ROM) is pre-loaded with a test program. To load a different one:
-    * In the `CPU` circuit, right-click the "Instruction_Memory" ROM component.
-    * Select "Load Image..." and choose a valid `.hex` file.
+    * In the `CPU` circuit, right-click the "Instruction_Memory" ROM component.
+    * Select "Load Image..." and choose a valid `.hex` file.
 4.  **Run:** Enable simulation by pressing **Ctrl+K** or navigating to `Simulate > Ticks Enabled`.
 5.  **Observe:** You can observe the values in the `Reg_File` and `Data_Memory` components change as the simulation runs.
 
