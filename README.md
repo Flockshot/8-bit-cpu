@@ -10,9 +10,7 @@ The processor executes a custom 21-bit ISA (Instruction Set Architecture) and fe
 
 This is the top-level view of the complete single-cycle processor, showing the interconnection of the Program Counter (PC), Control Unit, Register File, ALU, and Memory modules.
 
-> **[Image: Screenshot of the complete 8-bit CPU datapath in Logisim]**
-> ![CPU](.media/CPU.png)
-> *(**Developer Note:** Place your screenshot of the main `CPU` circuit here. It should look like the schematic on Page 11 of `report 3.pdf`.)*
+**[Image: Screenshot of the complete 8-bit CPU datapath in Logisim]**(.media/CPU.png)
 
 ---
 
