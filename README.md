@@ -38,9 +38,7 @@ A combinational logic circuit that decodes the instruction `opcode` and (for bra
     * `ALUfunc`: A 3-bit signal that tells the ALU which operation to perform.
     * `PCmux` & `Branch`: Signals to control PC updates for branches or jumps.
 
-> **[Image: Screenshot of the Control Unit sub-circuit logic]**
->
-> *(**Developer Note:** Place your screenshot of the `Control_Unit` circuit here. It should look like the schematic on Page 7 of `report 3.pdf`.)*
+> ![Image: Screenshot of the Control Unit sub-circuit logic](.media/Control_Unit.png)
 
 ### 2. Arithmetic Logic Unit (ALU)
 
@@ -48,9 +46,7 @@ The 8-bit computational core of the CPU.
 * **Operations:** `ADD`, `AND`, `OR`, `ROTL` (Rotate Left), `SLT` (Set Less Than).
 * **Flags:** Generates a 1-bit `EQ` (Equal) flag, which is set to `1` if `X == Y`. This flag is fed to the Control Unit to handle `BEQ` and `BNE` instructions.
 
-> **[Image: Screenshot of the ALU sub-circuit logic]**
->
-> *(**Developer Note:** Place your screenshot of the `ALU` circuit here. It should look like the schematic on Page 8 of `report 3.pdf`.)*
+> ![Image: Screenshot of the ALU sub-circuit logic](.media/ALU.png)
 
 ### 3. Register File
 
@@ -94,7 +90,6 @@ The CPU implements a custom 21-bit ISA with R-type, I-type, and J-type formats. 
 | **ROTL** | `1100` | R | `$Rd = $Rs ROTL $Rt$` |
 | **SLT** | `1111` | R | `$Rd = ($Rs < $Rt) ? 1 : 0$` |
 
-*(Based on Table 2.6 and 2.7 from the project specifications)*
 
 ---
 
