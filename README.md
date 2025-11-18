@@ -105,7 +105,7 @@ The CPU implements a custom 21-bit ISA with R-type, I-type, and J-type formats. 
 
 ## ✅ Verification
 
-The CPU's correctness was verified using a test program (found in `report 3.pdf` and specified in `specifications.pdf`) designed to check all instruction types.
+The CPU's correctness was verified using a test program (found in `report 3.pdf`) designed to check all instruction types.
 
 **Test Program Assembly:**
 ```asm
